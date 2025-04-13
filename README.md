@@ -47,14 +47,14 @@ Enter the size of each block in KB: 300 200 100 400
 Enter allocation strategy (1 for first-fit, 2 for best-fit, 3 for worst-fit):  2 
 Memory blocks are created…  
 Memory blocks: 
-============================================ 
-Block#      size                 start-end     status 
-============================================ 
-Block0      300                 0-299      free 
-Block1      200                  300-499      free 
-Block2      100                  500-599      free 
-Block3      400                  600-999      free 
-============================================ 
+=======================================================
+Block#      size                start-end      status 
+=======================================================
+Block0      300                 0-299           free 
+Block1      200                 300-499         free 
+Block2      100                 500-599         free 
+Block3      400                 600-999         free 
+======================================================
 1) Allocates memory blocks 
 2) De-allocates memory blocks 
 3) Print report about the current state of memory and internal Fragmentation 
@@ -80,14 +80,14 @@ P1 Allocated at address: 300, and the internal fragmentation is 50
 =========================================== 
 Enter your choice: 3 
 Memory blocks: 
-========================================================== 
-Block#     size          start-end     status         ProcessID  InternalFragmentation 
-========================================================== 
-Block0   300     0-299         free             Null             0 
-Block1   200          300-499     allocated     P2               50 
-Block2   100          500-599     allocated     P1               40 
-Block3      400          600-999     free             Null             0 
-==========================================================
+===============================================================================================
+Block#     size          start-end        status         ProcessID       InternalFragmentation 
+===============================================================================================
+Block0      300            0-299            free            Null                    0 
+Block1      200            300-499        allocated          P2                     50 
+Block2      100            500-599        allocated          P1                     40 
+Block3      400            600-999          free             Null                    0 
+==============================================================================================
 </pr>
 </body>
 
